@@ -20,7 +20,7 @@ class UserController extends Controller
     {
         $katakunci=request('search');
         if($katakunci){
-         $users = User::where( 'name', 'LIKE', '%' . $katakunci . '%' )->paginate(4);
+         $users = User::where( 'name', 'LIKE', '%' . $katakunci . '%' )->paginate(1);
               }  else {
                 $users = User::latest()->paginate(4);
               } 
