@@ -17,7 +17,7 @@
                 <a href=" {{route('users.create') }}">Tambah Data +</a>
 
                
-
+                @extends('layouts.app')
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
